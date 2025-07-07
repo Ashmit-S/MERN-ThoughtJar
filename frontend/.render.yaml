@@ -4,10 +4,14 @@ services:
     env: node
     plan: free
     buildCommand: |
-      npm install
+      npm install --prefix backend
       npm install --prefix frontend
       NODE_ENV=production npm run build --prefix frontend
     startCommand: npm run start
     envVars:
       - key: NODE_VERSION
         value: 18
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        value: your_mongo_connection_string_here
