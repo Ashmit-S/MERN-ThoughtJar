@@ -17,5 +17,8 @@
     "url": "https://github.com/Ashmit-S/MERN-ThoughtJar/issues"
   },
   "homepage": "https://github.com/Ashmit-S/MERN-ThoughtJar#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
 }
