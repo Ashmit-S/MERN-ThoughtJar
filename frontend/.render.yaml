@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mern-thoughtjar
+    env: node
+    plan: free
+    buildCommand: NODE_ENV=development npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.18.0
