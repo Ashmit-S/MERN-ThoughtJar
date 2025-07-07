@@ -6,6 +6,8 @@ services:
     buildCommand: |
       npm install --prefix backend
       npm install --prefix frontend
+      echo "Frontend node_modules:"
+      ls -R frontend/node_modules | grep vite || true
       NODE_ENV=production npm run build --prefix frontend
     startCommand: npm run start
     envVars:
