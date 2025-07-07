@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "vite": "^7.0.2"
+  },
+  "dependencies": {
+    "frontend": "file:.."
   }
 }
